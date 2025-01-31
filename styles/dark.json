@@ -1,0 +1,96 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Dark",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#28bf62",
+          "name": "Primary Light",
+          "slug": "primary-light"
+        },
+        {
+          "color": "#1b9c4c",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#004d3e",
+          "name": "Primary Dark",
+          "slug": "primary-dark"
+        },
+        {
+          "color": "#edf38b",
+          "name": "Accent",
+          "slug": "accent"
+        },
+        {
+          "color": "#868685",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#232323",
+          "name": "Tertiary",
+          "slug": "tertiary"
+        },
+        {
+          "color": "#32393d",
+          "name": "Base Contrast",
+          "slug": "base-contrast"
+        },
+        {
+          "color": "#ffffff",
+          "name": "Base Light",
+          "slug": "base-light"
+        },
+        {
+          "color": "#121511",
+          "name": "Base Dark",
+          "slug": "base-dark"
+        },
+        {
+          "color": "#fcfcfc",
+          "name": "Content Primary",
+          "slug": "content-primary"
+        },
+        {
+          "color": "#d0d1d0",
+          "name": "Content Secondary",
+          "slug": "content-secondary"
+        },
+        {
+          "color": "#afb1af",
+          "name": "Content Tertiary",
+          "slug": "content-tertiary"
+        },
+        {
+          "color": "#196236",
+          "name": "Content Link",
+          "slug": "content-link"
+        },
+        {
+          "color": "#464646",
+          "name": "Border Neutral",
+          "slug": "border-neutral"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#2d2d2d",
+      "text": "var(--wp--preset--color--content-primary)"
+    },
+    "spacing": {
+      "blockGap": "var(--wp--preset--spacing--20)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--custom--font--body)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "fontWeight": "var(--wp--custom--font-weight--400)",
+      "lineHeight": "1.4"
+    }
+  }
+}

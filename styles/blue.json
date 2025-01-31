@@ -1,0 +1,96 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "title": "Blue",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#adeff4",
+          "name": "Primary Light",
+          "slug": "primary-light"
+        },
+        {
+          "color": "#1995ad",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#0d333f",
+          "name": "Primary Dark",
+          "slug": "primary-dark"
+        },
+        {
+          "color": "#5ac39a",
+          "name": "Accent",
+          "slug": "accent"
+        },
+        {
+          "color": "#868685",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#f3f4f6",
+          "name": "Tertiary",
+          "slug": "tertiary"
+        },
+        {
+          "color": "#fcfcfc",
+          "name": "Base Contrast",
+          "slug": "base-contrast"
+        },
+        {
+          "color": "#ffffff",
+          "name": "Base Light",
+          "slug": "base-light"
+        },
+        {
+          "color": "#121511",
+          "name": "Base Dark",
+          "slug": "base-dark"
+        },
+        {
+          "color": "#040316",
+          "name": "Content Primary",
+          "slug": "content-primary"
+        },
+        {
+          "color": "#454745",
+          "name": "Content Secondary",
+          "slug": "content-secondary"
+        },
+        {
+          "color": "#6A6C6A",
+          "name": "Content Tertiary",
+          "slug": "content-tertiary"
+        },
+        {
+          "color": "#196236",
+          "name": "Content Link",
+          "slug": "content-link"
+        },
+        {
+          "color": "#e2e8f0",
+          "name": "Border Neutral",
+          "slug": "border-neutral"
+        },
+        {
+          "color": "transparent",
+          "name": "Transparent",
+          "slug": "transparent"
+        },
+        {
+          "color": "currentColor",
+          "name": "Current",
+          "slug": "current"
+        },
+        {
+          "color": "inherit",
+          "name": "Inherit",
+          "slug": "inherit"
+        }
+      ]
+    }
+  }
+}
