@@ -21,6 +21,9 @@ Yes, our theme is fully responsive and mobile-friendly. It adapts seamlessly to 
 
 == Changelog ==
 
+= 1.0.1 =
+* Reduced the size of hero-image.jpg for improved performance and faster loading times
+
 = 1.0.0 =
 * Initial release
 
