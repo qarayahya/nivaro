@@ -7,29 +7,29 @@
  * @author Yahya Qara
  * @since 1.0.0
  */
-function nivaro_welcome_notice() {
+function nvro_welcome_notice() {
 	$current_screen = get_current_screen();
 
 	// Check if the current screen is the themes page.
 	if ( 'themes' === $current_screen->id ) {
 		// Enqueue styles.
-		wp_enqueue_style( 'welcome-notice', get_template_directory_uri() . '/assets/css/welcome-notice.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'nvro-welcome-notice', get_template_directory_uri() . '/assets/css/welcome-notice.css', array(), wp_get_theme()->get( 'Version' ) );
 
 		// Enqueue jQuery.
 		wp_enqueue_script( 'jquery' );
 
 		// Register and enqueue welcome-notice.js.
-		wp_register_script( 'nivaro-welcome-notice-js', get_template_directory_uri() . '/assets/js/welcome-notice.js', array( 'jquery' ), '1.0.0', true );
+		wp_register_script( 'nvro-welcome-notice-js', get_template_directory_uri() . '/assets/js/welcome-notice.js', array( 'jquery' ), '1.0.0', true );
 		$welcome_notice_params = array(
 			'ajaxurl'                 => admin_url( 'admin-ajax.php' ),
-			'welcome_notice_security' => wp_create_nonce( 'nivaro-welcome-notice-nonce' ),
+			'welcome_notice_security' => wp_create_nonce( 'nvro-welcome-notice-nonce' ),
 		);
-		wp_localize_script( 'nivaro-welcome-notice-js', 'welcome_notice_params', $welcome_notice_params );
-		wp_enqueue_script( 'nivaro-welcome-notice-js' );
+		wp_localize_script( 'nvro-welcome-notice-js', 'nvro_welcome_notice_params', $welcome_notice_params );
+		wp_enqueue_script( 'nvro-welcome-notice-js' );
 
 		$get_started_url = 'https://blocklayouts.com/';
 		// Check if the notice has been dismissed.
-		if ( ! get_option( 'nivaro_notice_dismissed', false ) ) {
+		if ( ! get_option( 'nvro_notice_dismissed', false ) ) {
 			?>
 <div class="nivaro-notice-container notice notice-info is-dismissible">
     <div class="nivaro-notice-content">
@@ -64,32 +64,32 @@ function nivaro_welcome_notice() {
 		}
 	}
 }
-add_action( 'admin_notices', 'nivaro_welcome_notice' );
+add_action( 'admin_notices', 'nvro_welcome_notice' );
 
-function nivaro_dismiss_notice() {
+function nvro_dismiss_notice() {
 	// Check nonce for security.
-	if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'nivaro-welcome-notice-nonce' ) ) {
+	if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'nvro-welcome-notice-nonce' ) ) {
 		die( 'Permission check failed' );
 	}
 
 	// Update the option to indicate that the notice has been dismissed.
-	update_option( 'nivaro_notice_dismissed', true );
+	update_option( 'nvro_notice_dismissed', true );
 	die();
 }
 
-add_action( 'wp_ajax_nivaro_dismiss_notice', 'nivaro_dismiss_notice' );
+add_action( 'wp_ajax_nvro_dismiss_notice', 'nvro_dismiss_notice' );
 
 /**
  * Nivaro theme activate
  *
  * @return void
  */
-function nivaro_activate() {
+function nvro_activate() {
 	// Check if it's the first activation.
-	if ( get_option( 'nivaro_activated', false ) ) {
-		add_action( 'admin_notices', 'nivaro_welcome_notice' );
+	if ( get_option( 'nvro_activated', false ) ) {
+		add_action( 'admin_notices', 'nvro_welcome_notice' );
 		// Update the option to indicate that the welcome notice has been shown.
-		update_option( 'nivaro_activated', true );
+		update_option( 'nvro_activated', true );
 	}
 }
-add_action( 'after_switch_nivaro', 'nivaro_activate' );
+add_action( 'after_switch_theme', 'nvro_activate' );
