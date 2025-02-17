@@ -21,6 +21,10 @@ Yes, our theme is fully responsive and mobile-friendly. It adapts seamlessly to 
 
 == Changelog ==
 
+= 1.0.2 =
+* Replaced logos with CC0-licensed images
+* Applied unique prefixes to avoid conflicts in the public namespace
+
 = 1.0.1 =
 * Reduced the size of hero-image.jpg for improved performance and faster loading times
 
@@ -61,24 +65,12 @@ Lora font
 
 
 = Images =
-
-Logos:
-- License: Fair Use License
-- License URL: https://logoipsum.com/license/
-- Logo-1.png: https://logoipsum.com/artwork/259
-- Logo-2.png: https://logoipsum.com/artwork/261
-- Logo-3.png: https://logoipsum.com/artwork/242
-- Logo-4.png: https://logoipsum.com/artwork/212
-- Logo-5.png: https://logoipsum.com/artwork/220
-- Logo-6.png: https://logoipsum.com/artwork/235
-
-
-Other Images:
 - License: CC0
 - License URL: https://creativecommons.org/publicdomain/zero/1.0/
 - hero-image.jpg: https://stocksnap.io/photo/people-man-VPSJEO4B3U
 
-
-All images in /assets/images/icons created by Qara Yahya and available via CC0.
-welcome-notice-img.png, avatar.png, placeholder-vertical.png, placeholder.png - created by Qara Yahya and available via CC0.
-License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Other Images:
+- All images in /patterns/images/icons created by Qara Yahya and available via CC0.
+- All images in /patterns/images/logos created by Qara Yahya and available via CC0.
+- welcome-notice-img.png, avatar.png, placeholder-vertical.png, placeholder.png - created by Qara Yahya and available via CC0.
+- License URL: https://creativecommons.org/publicdomain/zero/1.0/
