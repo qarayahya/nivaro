@@ -5,7 +5,7 @@
  *
  * @package nivaro
  * @author Yahya Qara
- * @since 1.0.0
+ * @since 1.0.2
  */
 function nvro_welcome_notice() {
 	$current_screen = get_current_screen();
