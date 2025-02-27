@@ -21,6 +21,9 @@ Yes, our theme is fully responsive and mobile-friendly. It adapts seamlessly to 
 
 == Changelog ==
 
+= 1.0.3 =
+* Fixed mobile preview issue in the footer.
+
 = 1.0.2 =
 * Replaced logos with CC0-licensed images
 * Applied unique prefixes to avoid conflicts in the public namespace
