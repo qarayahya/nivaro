@@ -21,6 +21,10 @@ Yes, our theme is fully responsive and mobile-friendly. It adapts seamlessly to 
 
 == Changelog ==
 
+= 1.0.4 =
+* Update theme URI in style.css
+* Add CTA pattern
+
 = 1.0.3 =
 * Fixed mobile preview issue in the footer.
 
