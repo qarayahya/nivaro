@@ -21,6 +21,9 @@ Yes, our theme is fully responsive and mobile-friendly. It adapts seamlessly to 
 
 == Changelog ==
 
+= 1.0.5 =
+* Fixed: Corrected early translation loading for the nivaro text domain
+
 = 1.0.4 =
 * Update theme URI in style.css
 * Add CTA pattern
